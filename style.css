@@ -11,7 +11,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 75px;
     
 }
 
@@ -21,17 +23,40 @@ body {
 }
 
 .body-game {
-    padding: 40px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 75px;
 }
 
-.content-container {
+.content-container, .text{
     display: flex;
     justify-content: center;
-    gap: 40px;
+    align-items: center;
+ 
 }
 
-.info-ran {
-    max-width: 200px;
+.info-ran{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: flex;
+}
+
+.score{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 75px;
+    
 }
