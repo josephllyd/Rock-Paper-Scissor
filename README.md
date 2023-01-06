@@ -1,6 +1,4 @@
 # Rock-Paper-Scissor
 My first JavaScript program built from scratch
 
-![Alt text](/Rock Paper Scissors (Community) (1).png "Figma Design")
-
-![My Image](Rock Paper Scissors (Community) (1).png)
+![Rock Paper Scissors (Community) (1)](https://user-images.githubusercontent.com/109366020/211008766-e3a95360-0fba-4458-82d0-7c163483b2ef.png)
