@@ -9,30 +9,48 @@
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
 <body>
-    <div class="title">
-        <div class="title-design">YOU VS BOT</div><br><br><br><br>
-        <div class="random-title">choose you weapon!</div>
-    </div>
-    <div class="body-game">
+    <header class="title">
+        <h1 id="title-design">YOU VS BOT</h1><br><br>
+    </header>
+    <main class="main">
+        <h2 class="message" id="messageInfo">Choose you weapon!</h2>
+        <h3 class="message" id="scoreMessage">
+            First to score 5 points wins the game
+        </h3>
         <div class="content-container">
-            <div class="info-ran">
-                <img src="https://user-images.githubusercontent.com/109366020/211075047-5c77909c-e3b9-4fca-84c2-a7226cd562fe.png" alt="">
-                <div class="text">ROCK</div>
+            <button class="btn btn-info-ran" id="rockBtn">
+                <img id="rockBtnImg" src="https://user-images.githubusercontent.com/109366020/211075047-5c77909c-e3b9-4fca-84c2-a7226cd562fe.png" alt="">
+                <p class="text">ROCK</p>
+            </button>
+            <button class="btn btn-info-ran" id="paperBtn">
+                <img id="paperBtnImg" src="https://user-images.githubusercontent.com/109366020/211075134-19d958d0-5f54-4ef3-9247-091b60d5bf0e.png" alt="">
+                <p class="text">PAPER</p>
+            </button>
+            <button class="btn btn-info-ran" id="scissorBtn">
+                <img id="scissorBtnImg" src="https://user-images.githubusercontent.com/109366020/211075186-c2ade7ce-96ad-4fb8-bfea-a072d3bf430a.png" alt="">
+                <p class="text">SCISSOR</p>
+            </button>
+        </div>
+        <br><br>
+        <p class="score">score:</p>
+        <div class="content-container">
+            <div class="score-box">
+                <img id="playerWeapon" src="https://user-images.githubusercontent.com/109366020/211075047-5c77909c-e3b9-4fca-84c2-a7226cd562fe.png" alt="">
+                <p class="score">You</p>
+                <p class="score" id="playerScore">0/5</p>
             </div>
-            <div class="info-ran">
-                <img src="https://user-images.githubusercontent.com/109366020/211075134-19d958d0-5f54-4ef3-9247-091b60d5bf0e.png" alt="">
-                <div class="text">PAPER</div>
-            </div>
-            <div class="info-ran">
-                <img src="https://user-images.githubusercontent.com/109366020/211075186-c2ade7ce-96ad-4fb8-bfea-a072d3bf430a.png" alt="">
-                <div class="text">SCISSOR</div>
+            <div class="score-box">
+                <img id="botWeapon" src="https://user-images.githubusercontent.com/109366020/211075047-5c77909c-e3b9-4fca-84c2-a7226cd562fe.png" alt="">
+                <p class="score">Bot</p>
+                <p class="score" id="botScore">0/5</p>
             </div>
         </div>
-    </div>
-    <div class="score">
-        <div class="score-design">score:</div>
-        <div class="score-design">you | bot</div> 
-        <div class="score-count">(0/5)  (0/5)</div>       
-    </div>
+    </main>
+      <div class="modal" id="endgameModal">
+        <p class="modal-title" id="endgameMsg"></p>
+        <button class="btn btn-restart" id="restartBtn">Play again</button>
+      </div>
+      <div class="overlay" id="overlay"></div>
+      <script src="script.js"></script>
 </body>
 </html>
